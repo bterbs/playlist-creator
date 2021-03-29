@@ -1,6 +1,7 @@
 import "./App.css";
 import SearchBar from "../SearchBar/SearchBar.js";
 import SearchResults from "../SearchResults/SearchResults.js";
+import Playlist from "../Playlist/Playlist.js";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <SearchBar />
         <div className="App-playlist">
           <SearchResults />
-          {/* Add a Playlist component */}
+          <Playlist />
         </div>
       </div>
     </div>
