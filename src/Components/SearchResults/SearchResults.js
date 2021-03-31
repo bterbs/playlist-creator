@@ -1,9 +1,10 @@
 import "./SearchResults.css";
+import TrackList from "../TrackList/TrackList.js";
 
-const SearchResults = () => (
+const SearchResults = (props) => (
   <div className="SearchResults">
     <h2>Results</h2>
-    {/* <TrackList /> */}
+    <TrackList searchResults={props.searchResults} />
   </div>
 );
 
