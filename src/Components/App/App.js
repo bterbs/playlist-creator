@@ -13,6 +13,12 @@ class App extends Component {
         { id: 1, name: "Brittany", artist: "Bon Jovi", album: "Winning" },
         { id: 2, name: "Larry", artist: "Bon Jovi", album: "Tomorrow" },
       ],
+      playListName: "Summer Jamz",
+      playListTracks: [
+        { id: 1, name: "Hello", artist: "AeroSmith", album: "Greatest Hits" },
+        { id: 2, name: "Good Bye", artist: "The Beetles", album: "Help!" },
+        { id: 3, name: "Still here", artist: "Abba", album: "Disco Fever" },
+      ],
     };
   }
 
@@ -26,7 +32,10 @@ class App extends Component {
           <SearchBar />
           <div className="App-playlist">
             <SearchResults searchResults={this.state.searchResults} />
-            <Playlist />
+            <Playlist
+              playListName={this.state.playListName}
+              playListTracks={this.state.playListTracks}
+            />
           </div>
         </div>
       </div>
